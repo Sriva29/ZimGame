@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ZIM - Code Creativity</title>
+
+    <!-- zimjs.com - JavaScript Canvas Framework -->
+    <script type=module>
+
+import zim from "https://zimjs.org/cdn/015/zim";
+
+// See Docs under Frame for FIT, FILL, FULL, and TAG
+new Frame(FIT, 1024, 768, light, dark, ready);
+function ready() {
+    
+    // given F (Frame), S (Stage), W (width), H (height)
+    // put code here
+    
+    //new Circle(100, blue)
+      //  .center()
+        //.drag();
+
+    loop(10,(i,t)=>{
+        zogr(i+" loop!");
+        if (i==9) zogb("total: "+t);
+    });
+
+    //const button = new Button().center().drag().tap(()=>{zogr("that tickles!");});
+    //button.on("click", ()=>{
+    //   //  zogg("Button Clicked!");
+    // //});
+
+    // const rect = new Rectangle([10,20,30],[10,20,30]);
+
+    // //const tile = new Tile(rect, 10,5, 20, 20, align:CENTER,valign:CENTER).center().drag();
+    // const tile = new Tile({
+    //     obj: rect,
+    //     cols: 2,
+    //     rows: 2,
+    //     spacingH: 20,
+    //     spacingV: 20,
+    //     align: CENTER,
+    //     valign: CENTER
+    // }).center(); 
+    // //tile.items[1].removeFrom();
+    // tile.on("mousedown",(e)=>{
+    //     e.target.removeFrom();
+    //     S.update();
+    //         });
+    //         if(tile.items == undefined){zogr("no tiles left"); S.update();};
+        const circ = new Circle(20, blue).center();
+        Ticker.add(()=>{
+            //circ.x++;
+            circ.mov(1);
+            
+        })
+
+} // end ready
+
+</script>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+
+<body></body>
+
+</html>
